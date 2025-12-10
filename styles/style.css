@@ -27,7 +27,6 @@
 
 body {
   margin: 0;
-  width: 1280px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -77,7 +76,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: rgb(0, 0, 0);
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -90,7 +89,7 @@ body {
 .button-login {
   display: inline-block;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
@@ -122,15 +121,16 @@ body {
   margin: 0 auto 0 auto;
 }
 
-.slogan {
+/*.slogan {
   background-color: rgb(224, 245, 242);
   margin-bottom: 21px;
   padding: 69px 290px 120px 290px;
   text-align: center;
-}
+}*/
 
 .welcome-slogan {
   margin: 0 0 25px 0;
+  /*margin: 69px 290px 25px 290px;*/
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -140,7 +140,8 @@ body {
 }
 
 .slogan-description {
-  margin-bottom: 0 0 69px 0;
+  margin: 0 274px 69px 275px;
+  /*margin-bottom: 0 0 69px 0;*/
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -154,10 +155,12 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantage-item {
+  display: flex;
   background-color: rgba(131, 179, 211, 0.12);
 }
 .advantage-title {
@@ -188,48 +191,85 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 .service-users {
-  width: 1200px;
+  text-align: center;
 }
 
 .service-users-title {
+  width: 505px;
+  text-align: center;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
-  text-align: center;
 }
 
 .service-users-description {
+  width: 490px;
+  text-align: center;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
 }
-.service-users-list {
+.service-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.service-users-item {
+.service-item {
+  background: rgba(131, 179, 211, 0.12);
+  padding: 186px 81px 85px;
+  box-sizing: border-box;
+  width: 400px;
+  min-height: 385px;
+  background-repeat: no-repeat;
+  background-position: center 82px;
 }
 
-.service-user-title {
+.service-item:nth-child(2n) {
+  background-color: #ffffff;
+}
+
+.service-item-house {
+  background-image: url("../images/house.svg");
+  background-size: 75px 72px;
+}
+
+.service-item-food {
+  background-image: url(../images/food.svg);
+  background-size: 74px 70px;
+}
+
+.service-item-presents {
+  background-image: url(../images/presents.svg);
+  background-size: 64px 76px;
+}
+
+.service-title {
+  margin: 0 0 28px;
+  padding: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.service-user-description {
+.service-description {
+  margin: 0;
+  padding: 0;
+  width: 230px;
 }
 
 .hotel-search {
+  margin: 0;
+  padding: 96px 304px 96px 304px;
   text-align: center;
   background-color: #f5faf8;
 }
 .hotel-search-title {
+  margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -237,29 +277,33 @@ body {
   color: rgb(0, 0, 0);
 }
 .hotel-search-description {
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
+  margin: 0 0 54px 0;
 }
 
 .button-search {
   display: inline-block;
-  width: 376px;
-  height: 52px;
-  background-color: rgba(117, 97, 87, 1);
+  min-width: 376px;
+  max-width: 500px;
+  background-color: #756157;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  font-style: bold;
+  padding: 8px 10px 9px;
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .subscription {
   padding: 96px 258px 104px 258px;
   margin: 0;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-align: center;
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
@@ -271,13 +315,13 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   margin: 0 0 20px, 0;
 }
 .subscription-description {
   font-size: 22px;
   line-height: 26px;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   margin: 0 0 54px, 0;
 }
 
