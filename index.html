@@ -9,19 +9,19 @@
 
   <body class="index">
     <div class="container">
-      <header class="page-header">
+      <header class="page-header" data-test="header">
         <nav class="navigation">
-          <a class="logo-link" href="#">
+          <a class="logo-link" href="index.html" aria-current="page">
             <img
               class="logo-image"
               src="images/logo.svg"
               width="140"
               height="70"
-              alt="Логотип сайта">
+              alt="Логотип сайта Седона">
           </a>
           <ul class="nav-menu">
             <li class="nav-item">
-              <a class="nav-link nav-link-active" href="index.html">Главная </a>
+              <a class="nav-link nav-link-active" href="index.html" aria-current="page">Главная </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">О Седоне </a>
@@ -32,7 +32,7 @@
           </ul>
           <ul class="user-menu">
             <li class="user-item">
-              <a class="user-link user-link-search" href="#">
+              <a class="user-link user-link-search" href="search.html">
                 <span class="visually-hidden"> Поиск </span>
                 <svg
                   width="20"
@@ -47,7 +47,7 @@
               </a>
             </li>
             <li class="user-item">
-              <a class="user-link user-link-favourite" href="#">
+              <a class="user-link user-link-favourite" href="favorite.html">
                 <span class="visually-hidden"> Избранное </span>
                 <svg
                   width="18"
@@ -63,14 +63,14 @@
               </a>
             </li>
             <li class="user-item">
-              <a class="button-login" href="#">Хочу сюда!</a>
+              <a class="button button-login" href="form.html">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
 
-      <main class="main-index">
-        <section class="welcome">
+      <main class="main-index" data-test="main">
+        <section class="welcome" data-test="hero">
           <h1 class="visually-hidden">Сайт "Седона"</h1>
           <img
             class="welcome-logo"
@@ -79,7 +79,7 @@
             height="352"
             alt="Добро пожаловать в прекрасную Седону">
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2 class="welcome-slogan">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h2>
@@ -87,7 +87,7 @@
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
           <ul class="advantages-list">
-            <li class="advantage-with-image">
+            <li class="advantages-item advantage-with-image">
               <div class="advantage-wrapper">
                 <h3 class="advantage-title">Настоящий городок</h3>
                 <p class="advantage-description">
@@ -101,7 +101,7 @@
                 height="385"
                 alt="Красоты Седоны">
             </li>
-            <li class="advantage-without-image">
+            <li class="advantages-item advantage-without-image">
               <div class="advantage-wrapper">
                 <h3 class="advantage-title">Небольшая площадь</h3>
                 <p class="advantage-description">
@@ -109,7 +109,7 @@
                 </p>
               </div>
             </li>
-            <li class="advantage-without-image">
+            <li class="advantages-item advantage-without-image">
               <div class="advantage-wrapper">
                 <h3 class="advantage-title">Красивая дорога</h3>
                 <p class="advantage-description">
@@ -117,7 +117,7 @@
                 </p>
               </div>
             </li>
-            <li class="advantage-without-image">
+            <li class="advantages-item advantage-without-image">
               <div class="advantage-wrapper">
                 <h3 class="advantage-title">Мало туристов</h3>
                 <p class="advantage-description">
@@ -125,7 +125,7 @@
                 </p>
               </div>
             </li>
-            <li class="advantage-with-image">
+            <li class="advantages-item advantage-with-image image-reversed">
               <img
                 class="advantage-image"
                 src="images/sedona-bridge.jpg"
@@ -142,7 +142,7 @@
           </ul>
         </section>
 
-        <section class="service-users">
+        <section class="service-users" data-test="service">
           <h2 class="visually-hidden">Список услуг</h2>
           <p class="service-users-title">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -174,16 +174,16 @@
             </li>
           </ul>
         </section>
-        <section class="hotel-search">
+        <section class="hotel-search" data-test="search">
           <h2 class="visually-hidden">Бронирование отеля</h2>
           <p class="hotel-search-title">Заинтересовались?</p>
           <p class="hotel-search-description">
             Укажите предполагаемые даты поездки, <br>
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="button-search" href="#">Поиск гостиницы в Седоне </a>
+          <a class="button button-search" href="#">Поиск гостиницы в Седоне </a>
         </section>
-        <section class="subscription">
+        <section class="subscription" data-test="subscribe">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-description">
             Только полезная информация и никакого спама, честное бойскаутское!
@@ -202,14 +202,15 @@
           </form>
         </section>
       </main>
-      <footer class="page-footer">
+     
+       <footer class="page-footer" data-test="footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="footer-contacts-list">
             <li class="footer-contacts-item">
               <a class="footer-contacts-link" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
-                <svg
+                  <svg
                   class="social-icon"
                   width="24"
                   height="14"
@@ -218,7 +219,8 @@
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
-                    d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"/>
+                    d="M23.45 0.948C23.616 0.402 23.45 0 22.655 0H20.03C19.362 0 19.054 0.347 18.887 0.73C18.887 0.73 17.552 3.926 15.661 6.002C15.049 6.604 14.771 6.795 14.437 6.795C14.27 6.795 14.019 6.604 14.019 6.057V0.948C14.019 0.292 13.835 0 13.279 0H9.151C8.734 0 8.483 0.304 8.483 0.593C8.483 1.214 9.429 1.358 9.526 3.106V6.904C9.526 7.737 9.373 7.888 9.039 7.888C8.149 7.888 5.984 4.677 4.699 1.003C4.45 0.288 4.198 0 3.527 0H0.9C0.15 0 0 0.347 0 0.73C0 1.412 0.89 4.8 4.145 9.281C6.315 12.341 9.37 14 12.153 14C13.822 14 14.028 13.632 14.028 12.997V10.684C14.028 9.947 14.186 9.8 14.715 9.8C15.105 9.8 15.772 9.992 17.33 11.467C19.11 13.216 19.403 14 20.405 14H23.03C23.78 14 24.156 13.632 23.94 12.904C23.702 12.18 22.852 11.129 21.725 9.882C21.113 9.172 20.195 8.407 19.916 8.024C19.527 7.533 19.638 7.314 19.916 6.877C19.916 6.877 23.116 2.451 23.449 0.948H23.45Z"
+                  />
                 </svg>
               </a>
             </li>
@@ -233,14 +235,15 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z"/>
+                    d="M16.785 0.0992597L0.840489 6.24776C-0.247661 6.68481 -0.241365 7.29184 0.640845 7.56253L4.73445 8.83953L14.2058 2.8637C14.6537 2.59121 15.0629 2.7378 14.7265 3.03636L7.05283 9.96185H7.05103L7.05283 9.96275L6.77045 14.1823C7.18413 14.1823 7.36669 13.9925 7.59871 13.7686L9.58705 11.8351L13.7229 14.89C14.4855 15.31 15.0332 15.0941 15.2229 14.1841L17.9379 1.38885C18.2158 0.274623 17.5126 -0.229883 16.785 0.0992597Z"
+                  />
                 </svg>
               </a>
             </li>
             <li class="footer-contacts-item">
               <a
                 class="footer-contacts-link"
-                href="https://www.youtube.com/htm-userlacademy.ru">
+                href="https://www.youtube.com/htm-userlacademy.ru" >
                 <span class="visually-hidden">Youtube</span>
                 <svg
                   class="social-icon"
@@ -250,7 +253,8 @@
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M18.607 0H3.17413C1.31343 0 0 1.59375 0 3.4V13.4937C0 15.4062 1.31343 17 3.17413 17H18.8259C20.4677 17 22 15.4062 22 13.6V3.4C21.7811 1.59375 20.4677 0 18.607 0ZM7.66169 12.5375V4.4625L14.995 8.5L7.66169 12.5375Z"/>
+                    d="M18.607 0H3.17413C1.31343 0 0 1.59375 0 3.4V13.4937C0 15.4062 1.31343 17 3.17413 17H18.8259C20.4677 17 22 15.4062 22 13.6V3.4C21.7811 1.59375 20.4677 0 18.607 0ZM7.66169 12.5375V4.4625L14.995 8.5L7.66169 12.5375Z"
+                  />
                 </svg>
               </a>
             </li>
@@ -264,7 +268,8 @@
         </section>
         <section class="htmlacademy">
           <h2 class="visually-hidden">HTML Academy</h2>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/" target="_blank"
+            rel="noopener noreferrer">
             <svg
               role="img"
               width="115"
@@ -323,7 +328,7 @@
 
     <div class="modal modal-closed">
       <div class="modal-wrapper">
-        <button class="modal-close-button" type="button">
+        <button class="button modal-close-button" type="button">
           <span class="visually-hidden">Закрыть модальное окно</span>
         </button>
         <section class="modal-search">
@@ -377,6 +382,7 @@
                   name="adults-count"
                   id="adults"
                   value="2"
+                  placeholder="2"
                   required>
                 <button class="plus-button" type="button">
                   <span class="visually-hidden"
@@ -424,13 +430,14 @@
                   name="children-count"
                   id="children"
                   value="2"
+                  placeholder="2"
                   required>
                 <button class="plus-button" type="button">
                   <span class="visually-hidden">Добавить количество детей</span>
                 </button>
               </div>
             </div>
-            <button class="modal-submit-button" type="submit">Найти</button>
+            <button class="button modal-submit-button" type="submit">Найти</button>
           </form>
         </section>
       </div>
